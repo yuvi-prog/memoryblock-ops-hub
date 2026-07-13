@@ -9,23 +9,23 @@
 body{background:#14161a;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:#edeae3;
   height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
 #pin-wrap{display:flex;flex-direction:column;align-items:center;gap:0}
-#logo{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.18em;color:#e8a33d;
-  text-transform:uppercase;margin-bottom:8px}
-#tagline{font-size:13px;color:#63676f;margin-bottom:36px;letter-spacing:.2px}
-#dots{display:flex;gap:16px;margin-bottom:36px;height:14px;align-items:center}
-.dot{width:12px;height:12px;border-radius:50%;background:#2a2e36;border:1px solid #3a3f49;
+#logo{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.18em;color:#9b7ee8;
+  text-transform:uppercase;margin-bottom:9px}
+#tagline{font-size:14px;color:#63676f;margin-bottom:40px;letter-spacing:.2px}
+#dots{display:flex;gap:18px;margin-bottom:40px;height:16px;align-items:center}
+.dot{width:14px;height:14px;border-radius:50%;background:#2a2e36;border:1px solid #3a3f49;
   transition:background .15s,transform .15s}
-.dot.filled{background:#e8a33d;border-color:#e8a33d;transform:scale(1.15)}
-#pad{display:grid;grid-template-columns:repeat(3,76px);gap:12px}
-.key{width:76px;height:76px;border-radius:50%;background:#1b1e24;
-  border:1px solid #2a2e36;color:#edeae3;font-size:21px;font-weight:500;
+.dot.filled{background:#9b7ee8;border-color:#9b7ee8;transform:scale(1.15)}
+#pad{display:grid;grid-template-columns:repeat(3,84px);gap:13px}
+.key{width:84px;height:84px;border-radius:50%;background:#1b1e24;
+  border:1px solid #2a2e36;color:#edeae3;font-size:23px;font-weight:500;
   cursor:pointer;transition:all .12s;display:flex;align-items:center;justify-content:center;
   user-select:none}
 .key:hover{background:#22262e;border-color:#3a3f49}
-.key:active{background:#5c4322;border-color:#e8a33d;transform:scale(.96)}
-.key.del{font-size:15px;color:#63676f}
+.key:active{background:#372b52;border-color:#9b7ee8;transform:scale(.96)}
+.key.del{font-size:16px;color:#63676f}
 .key.empty{visibility:hidden;pointer-events:none}
-#err{height:18px;font-size:12px;color:#c9584f;text-align:center;margin-top:-20px;margin-bottom:8px;
+#err{height:19px;font-size:13px;color:#c9584f;text-align:center;margin-top:-20px;margin-bottom:9px;
   opacity:0;transition:opacity .2s}
 #err.show{opacity:1}
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
